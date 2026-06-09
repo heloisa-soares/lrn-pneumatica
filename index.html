@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRN - Manutenção Pneumática Industrial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#090a0d',
+                        brandCard: '#13151c',
+                        brandBlue: '#0066ff',
+                        brandSilver: '#cbd5e1'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .glow-effect:hover {
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.2);
+            border-color: #0066ff;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-white antialiased selection:bg-brandBlue selection:text-white">
+
+<header class="border-b border-gray-900 bg-brandDark/80 backdrop-blur sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="#inicio" class="flex items-center group h-10">
+                <img src="/img/logoLRN.png" 
+                     alt="LRN Manutenção Pneumática" 
+                     class="h-full w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+            </a>
+
+            <nav class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-400">
+                <a href="#inicio" class="hover:text-brandBlue transition-colors duration-300">Início</a>
+                <a href="#servicos" class="hover:text-brandBlue transition-colors duration-300">Serviços</a>
+                <a href="#sobre" class="hover:text-brandBlue transition-colors duration-300">A Empresa</a>
+                <a href="#contato" class="hover:text-brandBlue transition-colors duration-300">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5511957637050" target="_blank" class="hidden sm:inline-block border border-brandBlue/30 hover:border-brandBlue bg-brandBlue/10 hover:bg-brandBlue text-white text-xs font-bold uppercase tracking-widest py-2.5 px-5 rounded-sm transition-all duration-300">
+                Suporte de Emergência
+            </a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gradient-to-b from-brandCard to-brandDark px-6">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f293710_1px,transparent_1px),linear-gradient(to_bottom,#1f293710_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+        
+        <div class="absolute top-0 left-0 w-0 h-0 border-t-[6mm] border-t-brandBlue border-r-[6mm] border-r-transparent"></div>
+        <div class="absolute bottom-0 right-0 w-0 h-0 border-b-[6mm] border-b-brandBlue border-left-[6mm] border-l-transparent"></div>
+
+        <div class="container mx-auto text-center relative z-10 max-w-4xl">
+            <div class="inline-flex items-center gap-2 border border-gray-800 bg-brandDark/60 px-4 py-1.5 rounded-full text-gray-400 text-xs font-medium tracking-wider uppercase mb-8">
+                <span class="w-2 h-2 rounded-full bg-brandBlue animate-pulse"></span> Engenharia Industrial B2B
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white uppercase mb-6">
+                Eficiência que move o<br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandSilver to-brandBlue">seu trabalho</span>
+            </h1>
+            
+            <p class="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed mb-12">
+                Evite perdas financeiras com linhas de produção paradas. Diagnóstico de alta precisão técnica e manutenção especializada para sistemas pneumáticos e compressores.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/5511957637050?text=Olá! Preciso de suporte para um equipamento pneumático." target="_blank" class="w-full sm:w-auto bg-brandBlue hover:bg-blue-700 text-white font-bold uppercase tracking-widest text-xs px-8 py-4 shadow-lg shadow-brandBlue/20 transition-all duration-300 flex items-center justify-center gap-3">
+                    <i class="fab fa-whatsapp text-lg"></i> Iniciar Atendimento Comercial
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto border border-gray-800 hover:border-gray-600 text-gray-400 hover:text-white font-bold uppercase tracking-widest text-xs px-8 py-4 transition-all duration-300">
+                    Conhecer Especialidades
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 border-t border-gray-950 bg-brandDark px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 pb-6 border-b border-gray-900">
+                <div>
+                    <p class="text-brandBlue text-xs font-bold uppercase tracking-widest mb-2">Soluções Corporativas</p>
+                    <h2 class="text-3xl font-black uppercase tracking-wider text-white">Especialidades LRN</h2>
+                </div>
+                <p class="text-gray-500 text-sm max-w-sm mt-4 md:mt-0">
+                    Atuação em conformidade com as normas técnicas industriais para máxima performance e segurança.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-brandCard/40 p-8 border border-gray-900 glow-effect transition-all duration-300 relative">
+                    <div class="text-brandBlue text-2xl mb-6">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold uppercase tracking-wide text-brandSilver mb-3">1. Manutenção Preventiva</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Inspeções programadas para mitigar falhas críticas e prolongar a vida útil dos componentes do seu sistema de ar.
+                    </p>
+                    <div class="space-y-2 border-t border-gray-900/60 pt-4 text-xs font-bold tracking-wider text-gray-500 uppercase">
+                        <div><span class="text-brandBlue mr-2">■</span> Análise e Troca de Filtros</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Monitoramento de Pressão</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Testes de Estanqueidade</div>
+                    </div>
+                </div>
+
+                <div class="bg-brandCard/40 p-8 border border-gray-900 glow-effect transition-all duration-300 relative">
+                    <div class="text-brandBlue text-2xl mb-6">
+                        <i class="fas fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="text-lg font-bold uppercase tracking-wide text-brandSilver mb-3">2. Engenharia Corretiva</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Intervenções técnicas ágeis para correção de anomalias operacionais e substituição de componentes danificados.
+                    </p>
+                    <div class="space-y-2 border-t border-gray-900/60 pt-4 text-xs font-bold tracking-wider text-gray-500 uppercase">
+                        <div><span class="text-brandBlue mr-2">■</span> Reparo de Compressores</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Reforma de Cilindros</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Troca de Atuadores e Válvulas</div>
+                    </div>
+                </div>
+
+                <div class="bg-brandCard/40 p-8 border border-gray-900 glow-effect transition-all duration-300 relative">
+                    <div class="text-brandBlue text-2xl mb-6">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold uppercase tracking-wide text-brandSilver mb-3">3. Otimização Energética</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Mapeamento avançado e eliminação de vazamentos na rede de ar comprimido, gerando redução drástica na fatura de energia.
+                    </p>
+                    <div class="space-y-2 border-t border-gray-900/60 pt-4 text-xs font-bold tracking-wider text-gray-500 uppercase">
+                        <div><span class="text-brandBlue mr-2">■</span> Auditoria de Vazamentos</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Dimensionamento de Linhas</div>
+                        <div><span class="text-brandBlue mr-2">■</span> Redução de Custo de Energia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-brandCard/20 px-6 border-t border-gray-950">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-brandBlue mb-3">Porquê a LRN?</h2>
+            <h3 class="text-2xl sm:text-3xl font-black uppercase text-white mb-6">Rigores Técnicos e Atendimento Exclusivo</h3>
+            <p class="text-gray-400 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-8">
+                Unimos conhecimento em mecânica de fluidos e automação industrial para entregar diagnósticos precisos. Atendemos diretamente no local do cliente, garantindo transparência, documentação técnica das peças substituídas e garantia de conformidade operacional.
+            </p>
+            <div class="inline-block border-l-2 border-brandBlue pl-4 text-left">
+                <span class="block text-white font-bold uppercase text-xs tracking-wider">Área de Cobertura Dedicada</span>
+                <span class="text-gray-500 text-xs">Atendimento Técnico em São Paulo e Região Metropolitana.</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-brandDark border-t border-gray-950 py-16 px-6 text-center">
+        <div class="container mx-auto max-w-md">
+            
+            <div class="flex justify-center mb-6">
+                <svg class="h-6 w-auto text-brandSilver" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="30" y="38" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#cbd5e1">LR</text>
+                    <text x="82" y="38" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="34" fill="#0066ff">N</text>
+                </svg>
+            </div>
+
+            <p class="text-xs font-bold uppercase tracking-widest text-gray-500 mb-2">Central de Atendimento Técnico</p>
+            
+            <a href="https://wa.me/5511957637050" target="_blank" class="block text-2xl font-black tracking-wide text-white hover:text-brandBlue transition-colors duration-300 mb-8">
+                (11) 95763-7050
+            </a>
+
+            <div class="text-[10px] font-semibold text-gray-600 uppercase tracking-widest leading-relaxed">
+                <p class="mb-2">© 2026 LRN Manutenção Pneumática. Todos os direitos reservados.</p>
+                <p>Desenvolvido em Conformidade com Padrões Web de Alta Performance.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5511957637050" target="_blank" class="fixed bottom-6 right-6 bg-green-600 hover:bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-2xl z-50 transition-all duration-300 transform hover:scale-110" title="Solicitar Técnico Comercial">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
